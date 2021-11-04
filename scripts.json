@@ -1,0 +1,20 @@
+{
+  "$schema": "https://deno.land/x/denon@2.4.9/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run mod.ts",
+      "desc": "run my mod.ts file",
+      "allow": [
+        "net",
+        "env",
+        "read"
+      ]
+    }
+  },
+  "watcher": {
+    "match": [
+      "**/*.*",
+      "src/**/*.ts"
+    ]
+  }
+}
